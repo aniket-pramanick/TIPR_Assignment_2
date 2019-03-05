@@ -183,7 +183,7 @@ def batch_generator(X, Y, batch_size):
     return w, b, mean_cost"""
                 
 
-def train(configuration, x_train, y_train, epoch = 5000, learning_rate = 0.01, regularizer = 0.00001):
+def train(configuration, x_train, y_train, epoch = 5000, learning_rate = 0.001, regularizer = 0.00001):
     print "Training Started with "+str(epoch)+" iterations ....."
     w, b = initialize_parameters(configuration)
     num_data = len(y_train)
